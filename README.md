@@ -53,13 +53,21 @@ __Time of 1 epoch__
 | Epoch Time | 0.42s | 0.25s | 0.16s | 0.11s | 0.09s |
 <img src="https://github.com/StephanieMussi/Cardiotocography_Classification_NN/blob/main/Figures/2aTime.png" width="300" height="200">
   
+As can be seen, the accuracies using different batch size are similar, while the epoch time decreases a lot as batch size increases. In this way, 64 is determined as the optimal batch size.  
 
 ## Model With Optimal Batch Size
-  
+Using the batch size of 64, the model is trained for 200 epochs. The accuracies are shown:  
+Train Accuracy | Test Accuracy
+:-: | :-:
+88.91% | 89.97%
+The accuracy and loss graphs are plotted:  
+<img src="https://github.com/StephanieMussi/Cardiotocography_Classification_NN/blob/main/Figures/2cAcc.png" width="300" height="200">
+<img src="https://github.com/StephanieMussi/Cardiotocography_Classification_NN/blob/main/Figures/2cLoss.png" width="300" height="200">
     
     
 ## Find Optimal Number of Hidden Neurons
 The performances of number of hidden neurons  = 5, 10, 15, 20, 25 are compared to determine the optimal number of hidden neurons.   
+
 
 
 ## Model With Optimal Number of Hidden Neurons
