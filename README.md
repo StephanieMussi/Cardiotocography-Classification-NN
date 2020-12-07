@@ -118,3 +118,26 @@ __Time of 1 epoch:__
     
     
 ## Comparison With 4-Layer Model
+A 4-layer neural network is implemented with the same parameters as specified in the initial model. 
+```python
+model = Sequential([Dense(no_neurons, activation='relu', 
+                          kernel_initializer=RandomUniform(w_min_relu1, w_max_relu1), 
+                          kernel_regularizer=l2(beta)),
+                    Dense(no_neurons, activation='relu', 
+                          kernel_initializer=RandomUniform(w_min_relu2, w_max_relu2), 
+                          kernel_regularizer=l2(beta)),
+                    Dense(NO_CLASSES, activation='softmax', 
+                          kernel_initializer=RandomUniform(w_min_softmax, w_max_softmax),
+                          kernel_regularizer=l2(beta))])
+```
+The model is trained for 200 epochs, and the accuracies are:  
+Train Accuracy | Test Accuracy
+:-: | :-:
+90.46% | 90.44%
+  
+  
+The accuracy and loss graphs are plotted:  
+<img src="https://github.com/StephanieMussi/Cardiotocography_Classification_NN/blob/main/Figures/5Acc.png" width="300" height="200">
+<img src="https://github.com/StephanieMussi/Cardiotocography_Classification_NN/blob/main/Figures/5Loss.png" width="300" height="200">  
+As can be observed, this model achieves a slightly better result as compared to the optimal 3-layer model.
+
