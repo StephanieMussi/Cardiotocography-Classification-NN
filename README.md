@@ -2,8 +2,9 @@
 This project aims to perform classification task on the [Cardiotocography dataset](https://archive.ics.uci.edu/ml/datasets/Cardiotocography). In this dataset, each cardiotocograms is labeled with a fetal state: N(_Normal_), S(_Suspect_), or P(_Pathologic_). A 3-layer feedforward neural network is designed for classification, and the parameters are refined with results from k-cross validation.  
 
 ## Initial Model
-First of all, the data in 
-A 3-layer neural network with batch size of 32, 10 neurons in the hidden layer, and decay parameter of 1e-6 is implemented.  
+First of all, the data in ["ctg_data_cleaned.csv"](https://github.com/StephanieMussi/Cardiotocography_Classification_NN/blob/main/ctg_data_cleaned.csv) is read and split in to train data and test data (70:30).  
+
+Then, a 3-layer neural network with batch size of 32, 10 neurons in the hidden layer, and decay parameter of 1e-6 is implemented.  
 ```python
 batch_size = 32
 beta = 0.000001
@@ -20,7 +21,13 @@ model = Sequential([Dense(no_neurons, activation='relu',
                           kernel_regularizer=l2(beta))])
 ```
 
-The model is trained for 200 epochs using [SGD optimizer](https://keras.io/api/optimizers/sgd/). 
+The model is trained for 200 epochs using [SGD optimizer](https://keras.io/api/optimizers/sgd/). The accuracies are as below:  
+Train Accuracy | Test Accuracy
+------------ | -------------
+89.99% | 89.66%
+
+Also, the graphs of accuracy and loss are plotted.  
+
 
 ## Find Optimal Batch Size
 
