@@ -101,18 +101,28 @@ The performances of weight decay parameter = 0, 1e-3, 1e-6, 1e-9, 1e-12 are comp
 __Accuracy:__
 | Decay parameter | 0 | 1e-3 | 1e-6 | 1e-9 | 1e-12 |
 | :-: | :-: | :-: | :-: | :-: | :-: |
-| Accuracy | 89.29% | 89.36% | 89.09% | 89.36% | 88.69% |
+| Accuracy | 88.82% | 89.09% | 89.02% | 89.29% | 88.63% |
 <img src="https://github.com/StephanieMussi/Cardiotocography_Classification_NN/blob/main/Figures/4aAcc.png" width="300" height="200">  
   
   
 __Time of 1 epoch:__ 
 | Decay parameter | 0 | 1e-3 | 1e-6 | 1e-9 | 1e-12 |
 | :-: | :-: | :-: | :-: | :-: | :-: |
-| Epoch Time | 0.06s | 0.037s | 0.038s | 0.037s | 0.038s |
-<img src="https://github.com/StephanieMussi/Cardiotocography_Classification_NN/blob/main/Figures/4aTime.png" width="300" height="200">
+| Epoch Time | 0.0038s | 0.037s | 0.037s | 0.037s | 0.037s |
+<img src="https://github.com/StephanieMussi/Cardiotocography_Classification_NN/blob/main/Figures/4aTime.png" width="300" height="200">  
+
+The value of 10^(-9) is determined to be the optimal decay parameter.
 
 ## Model With Optimal Weight Decay Parameter
+Using decay parameter of 10^(-9), the model is trained for 200 epochs. The accuracies are shown:  
+Train Accuracy | Test Accuracy
+:-: | :-:
+88.84% | 89.97%
   
+   
+The accuracy and loss graphs are plotted:  
+<img src="https://github.com/StephanieMussi/Cardiotocography_Classification_NN/blob/main/Figures/4cAcc.png" width="300" height="200">
+<img src="https://github.com/StephanieMussi/Cardiotocography_Classification_NN/blob/main/Figures/4cLoss.png" width="300" height="200">
 
   
     
