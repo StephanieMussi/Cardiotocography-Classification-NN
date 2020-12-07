@@ -39,16 +39,16 @@ The performances of batch size  = 4, 8, 16, 32, 64 are compared to determine the
 Here 5-cross validation is used, which slices the train data into 5 folders, and use one as test data in each iteration. The final accuracy is the mean accuracies obtained from the 5 iterations.  
 To better compare the time to convergence and convegent accuracies, the number of epochs used is 1000. The results are summarized as below:  
 * Accuracy  
-|Batch Size | 4 | 8 | 16 | 32 | 64|
-|------------ | ------------ | ------------ | ------------ | ------------ | ------------|
-|Accuracy | 90.24% | 90.03% | 89.16% | 89.70% | 89.63%|
+| Batch Size | 4 | 8 | 16 | 32 | 64 |
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| Accuracy | 90.24% | 90.03% | 89.16% | 89.70% | 89.63% |
 <img src="https://github.com/StephanieMussi/Cardiotocography_Classification_NN/blob/main/Figures/2aAcc.png" width="300" height="200">  
   
   
 * Time of 1 epoch  
-|Batch Size | 4 | 8 | 16 | 32 | 64|
-|------------ | ------------ | ------------ | ------------ | ------------ | ------------|
-|Epoch Time| 0.42s | 0.25s | 0.16s | 0.11s | 0.09s|
+| Batch Size | 4 | 8 | 16 | 32 | 64 |
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| Epoch Time | 0.42s | 0.25s | 0.16s | 0.11s | 0.09s |
 <img src="https://github.com/StephanieMussi/Cardiotocography_Classification_NN/blob/main/Figures/2aTime.png" width="300" height="200">
   
 
