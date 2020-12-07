@@ -40,14 +40,14 @@ Here 5-cross validation is used, which slices the train data into 5 folders, and
 To better compare the time to convergence and convegent accuracies, the number of epochs used is 1000. The results are summarized as below:  
   
   
-__Accuracy__
+__Accuracy:__
 | Batch Size | 4 | 8 | 16 | 32 | 64 |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | Accuracy | 90.24% | 90.03% | 89.16% | 89.70% | 89.63% |
 <img src="https://github.com/StephanieMussi/Cardiotocography_Classification_NN/blob/main/Figures/2aAcc.png" width="300" height="200">  
   
   
-__Time of 1 epoch__ 
+__Time of 1 epoch:__ 
 | Batch Size | 4 | 8 | 16 | 32 | 64 |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | Epoch Time | 0.42s | 0.25s | 0.16s | 0.11s | 0.09s |
@@ -59,7 +59,7 @@ As can be seen, the accuracies using different batch size are similar, while the
 Using the batch size of 64, the model is trained for 200 epochs. The accuracies are shown:  
 Train Accuracy | Test Accuracy
 :-: | :-:
-88.91% | 89.97%
+88.91% | 89.97%  
 The accuracy and loss graphs are plotted:  
 <img src="https://github.com/StephanieMussi/Cardiotocography_Classification_NN/blob/main/Figures/2cAcc.png" width="300" height="200">
 <img src="https://github.com/StephanieMussi/Cardiotocography_Classification_NN/blob/main/Figures/2cLoss.png" width="300" height="200">
@@ -67,17 +67,48 @@ The accuracy and loss graphs are plotted:
     
 ## Find Optimal Number of Hidden Neurons
 The performances of number of hidden neurons  = 5, 10, 15, 20, 25 are compared to determine the optimal number of hidden neurons.   
+__Accuracy:__
+| Number of hidden neurons | 5 | 10 | 15 | 20 | 25 |
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| Accuracy | 89.29% | 89.36% | 89.09% | 89.36% | 88.69% |
+<img src="https://github.com/StephanieMussi/Cardiotocography_Classification_NN/blob/main/Figures/3aAcc.png" width="300" height="200">  
+  
+  
+__Time of 1 epoch:__ 
+| Number of hidden neurons | 5 | 10 | 15 | 20 | 25 |
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| Epoch Time | 0.036s | 0.037s | 0.038s | 0.037s | 0.038s |
+<img src="https://github.com/StephanieMussi/Cardiotocography_Classification_NN/blob/main/Figures/3aTime.png" width="300" height="200">
 
-
+Although the epoch time with 5 hidden neurons is smallest, the time to convergence is larger than the others. The number of hidden neurons is determined to be 10 in balance of accuracy, epoch time and convergent time.
 
 ## Model With Optimal Number of Hidden Neurons
+Using 10 hidden neurons, the model is trained for 200 epochs. The accuracies are shown:  
+Train Accuracy | Test Accuracy
+:-: | :-:
+88.91% | 89.97%  
+The accuracy and loss graphs are plotted:  
+<img src="https://github.com/StephanieMussi/Cardiotocography_Classification_NN/blob/main/Figures/3cAcc.png" width="300" height="200">
+<img src="https://github.com/StephanieMussi/Cardiotocography_Classification_NN/blob/main/Figures/3cLoss.png" width="300" height="200">
   
     
-    
 ## Find Optimal Weight Decay Parameter
+The performances of weight decay parameter = 0, 1e-3, 1e-6, 1e-9, 1e-12 are compared to determine the optimal number of hidden neurons.   
+__Accuracy:__
+| Decay parameter | 0 | 1e-3 | 1e-6 | 1e-9 | 1e-12 |
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| Accuracy | 89.29% | 89.36% | 89.09% | 89.36% | 88.69% |
+<img src="https://github.com/StephanieMussi/Cardiotocography_Classification_NN/blob/main/Figures/4aAcc.png" width="300" height="200">  
+  
+  
+__Time of 1 epoch:__ 
+| Decay parameter | 0 | 1e-3 | 1e-6 | 1e-9 | 1e-12 |
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| Epoch Time | 0.036s | 0.037s | 0.038s | 0.037s | 0.038s |
+<img src="https://github.com/StephanieMussi/Cardiotocography_Classification_NN/blob/main/Figures/4aTime.png" width="300" height="200">
 
 ## Model With Optimal Weight Decay Parameter
-The performances of decay parameter  = 0, 1e-3, 1e-6, 1e-9, 1e-12 are compared to determine the optimal decay parameter.   
+  
 
   
     
