@@ -38,6 +38,8 @@ Also, the graphs of accuracy and loss are plotted.
 The performances of batch size  = 4, 8, 16, 32, 64 are compared to determine the optimal batch size.   
 Here 5-cross validation is used, which slices the train data into 5 folders, and use one as test data in each iteration. The final accuracy is the mean accuracies obtained from the 5 iterations.  
 To better compare the time to convergence and convegent accuracies, the number of epochs used is 1000. The results are summarized as below:  
+  
+  
 __Accuracy__
 | Batch Size | 4 | 8 | 16 | 32 | 64 |
 | :-: | :-: | :-: | :-: | :-: | :-: |
