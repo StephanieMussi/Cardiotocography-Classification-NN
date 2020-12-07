@@ -24,7 +24,7 @@ model = Sequential([Dense(no_neurons, activation='relu',
   
 The model is trained for 200 epochs using [SGD optimizer](https://keras.io/api/optimizers/sgd/). The accuracies are as below:  
 Train Accuracy | Test Accuracy
------------- | -------------
+:-: | :-:
 89.99% | 89.66%
   
   
@@ -38,14 +38,14 @@ Also, the graphs of accuracy and loss are plotted.
 The performances of batch size  = 4, 8, 16, 32, 64 are compared to determine the optimal batch size.   
 Here 5-cross validation is used, which slices the train data into 5 folders, and use one as test data in each iteration. The final accuracy is the mean accuracies obtained from the 5 iterations.  
 To better compare the time to convergence and convegent accuracies, the number of epochs used is 1000. The results are summarized as below:  
-* Accuracy  
+__Accuracy__
 | Batch Size | 4 | 8 | 16 | 32 | 64 |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | Accuracy | 90.24% | 90.03% | 89.16% | 89.70% | 89.63% |
 <img src="https://github.com/StephanieMussi/Cardiotocography_Classification_NN/blob/main/Figures/2aAcc.png" width="300" height="200">  
   
   
-* Time of 1 epoch  
+__Time of 1 epoch__ 
 | Batch Size | 4 | 8 | 16 | 32 | 64 |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | Epoch Time | 0.42s | 0.25s | 0.16s | 0.11s | 0.09s |
