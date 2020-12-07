@@ -57,9 +57,9 @@ As can be seen, the accuracies using different batch size are similar, while the
 
 ## Model With Optimal Batch Size
 Using the batch size of 64, the model is trained for 200 epochs. The accuracies are shown:  
-|Train Accuracy | Test Accuracy|
-|:-: | :-:|
-|88.91% | 89.97%  |
+Train Accuracy | Test Accuracy
+:-: | :-:
+88.91% | 89.97%
 The accuracy and loss graphs are plotted:  
 <img src="https://github.com/StephanieMussi/Cardiotocography_Classification_NN/blob/main/Figures/2cAcc.png" width="300" height="200">
 <img src="https://github.com/StephanieMussi/Cardiotocography_Classification_NN/blob/main/Figures/2cLoss.png" width="300" height="200">
@@ -84,9 +84,9 @@ Although the epoch time with 5 hidden neurons is smallest, the time to convergen
 
 ## Model With Optimal Number of Hidden Neurons
 Using 10 hidden neurons, the model is trained for 200 epochs. The accuracies are shown:  
-|Train Accuracy | Test Accuracy|
-|:-: | :-:|
-|88.91% | 89.97% |
+Train Accuracy | Test Accuracy
+:-: | :-:
+88.91% | 89.97%
 The accuracy and loss graphs are plotted:  
 <img src="https://github.com/StephanieMussi/Cardiotocography_Classification_NN/blob/main/Figures/3cAcc.png" width="300" height="200">
 <img src="https://github.com/StephanieMussi/Cardiotocography_Classification_NN/blob/main/Figures/3cLoss.png" width="300" height="200">
