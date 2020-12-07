@@ -104,7 +104,7 @@ __Accuracy:__
 __Time of 1 epoch:__ 
 | Decay parameter | 0 | 1e-3 | 1e-6 | 1e-9 | 1e-12 |
 | :-: | :-: | :-: | :-: | :-: | :-: |
-| Epoch Time | 0.036s | 0.037s | 0.038s | 0.037s | 0.038s |
+| Epoch Time | 0.06s | 0.037s | 0.038s | 0.037s | 0.038s |
 <img src="https://github.com/StephanieMussi/Cardiotocography_Classification_NN/blob/main/Figures/4aTime.png" width="300" height="200">
 
 ## Model With Optimal Weight Decay Parameter
