@@ -60,6 +60,8 @@ Using the batch size of 64, the model is trained for 200 epochs. The accuracies 
 Train Accuracy | Test Accuracy
 :-: | :-:
 88.91% | 89.97%
+  
+  
 The accuracy and loss graphs are plotted:  
 <img src="https://github.com/StephanieMussi/Cardiotocography_Classification_NN/blob/main/Figures/2cAcc.png" width="300" height="200">
 <img src="https://github.com/StephanieMussi/Cardiotocography_Classification_NN/blob/main/Figures/2cLoss.png" width="300" height="200">
@@ -87,6 +89,8 @@ Using 10 hidden neurons, the model is trained for 200 epochs. The accuracies are
 Train Accuracy | Test Accuracy
 :-: | :-:
 88.91% | 89.97%
+  
+   
 The accuracy and loss graphs are plotted:  
 <img src="https://github.com/StephanieMussi/Cardiotocography_Classification_NN/blob/main/Figures/3cAcc.png" width="300" height="200">
 <img src="https://github.com/StephanieMussi/Cardiotocography_Classification_NN/blob/main/Figures/3cLoss.png" width="300" height="200">
