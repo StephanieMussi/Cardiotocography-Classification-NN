@@ -79,7 +79,7 @@ __Accuracy:__
 __Time of 1 epoch:__ 
 | Number of hidden neurons | 5 | 10 | 15 | 20 | 25 |
 | :-: | :-: | :-: | :-: | :-: | :-: |
-| Epoch Time | 0.036s | 0.037s | 0.038s | 0.037s | 0.038s |
+| Epoch Time | 0.03601s | 0.03720s | 0.03766s | 0.03729s | 0.03754s |
 <img src="https://github.com/StephanieMussi/Cardiotocography_Classification_NN/blob/main/Figures/3aTime.png" width="300" height="200">
 
 Although the epoch time with 5 hidden neurons is smallest, the time to convergence is larger than the others. The number of hidden neurons is determined to be 10 in balance of accuracy, epoch time and convergent time.
